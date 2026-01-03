@@ -1,0 +1,6 @@
+import pandas as pd
+df = pd.DataFrame({
+    'X': [10, 20, 30, 40, 50],
+    'Y': [15, 25, 35, 45, 60]
+})
+print(df.corr())
