@@ -1,0 +1,6 @@
+import pandas as pd
+from sklearn.preprocessing import LabelEncoder
+df = pd.DataFrame({'Color': ['Red', 'Blue', 'Green', 'Blue']})
+le = LabelEncoder()
+df['Color_Code'] = le.fit_transform(df['Color'])
+print(df)
